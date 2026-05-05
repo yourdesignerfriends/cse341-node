@@ -1,0 +1,23 @@
+{
+  "name": "cse341-node",
+  "version": "1.0.0",
+  "description": "My first project",
+  "homepage": "https://github.com/yourdesignerfriends/cse341-node#readme",
+  "bugs": {
+    "url": "https://github.com/yourdesignerfriends/cse341-node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourdesignerfriends/cse341-node.git"
+  },
+  "license": "ISC",
+  "author": "Analina Nielsen",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
