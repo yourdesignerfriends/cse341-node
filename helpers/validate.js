@@ -1,10 +1,9 @@
-validator(req.body, validationRule, {}, (err, status) => {
-  if (!status) {
-    return res.status(412).send({
-      success: false,
-      message: 'Validation failed',
-      data: err
-    });
-  }
-  next();
-});
+const Validator = require('validatorjs');
+
+const validator = (body, rules, customMessages, callback) => {
+  const validation = new Validator(body, rules, customMessages);
+  validation.passes(() => callback(null, true));
+  validation.fails(() => callback(validation.errors, false));
+};
+
+module.exports = validator;
