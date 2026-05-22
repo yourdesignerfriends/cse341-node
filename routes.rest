@@ -2,22 +2,22 @@
 GET http://localhost:3000/contacts
 
 ### Get one contact
-GET http://localhost:3000/contacts/69f98a1c9c68dbbc7b050d7b
+GET http://localhost:3000/contacts/6a0e36f981be7652c234a765
 
 ### Create contact
 POST http://localhost:3000/contacts HTTP/1.1
 content-type: application/json
 
 {
-  "firstName": "Ashley",
-  "lastName": "Weaver",
-  "email": "aweaver@test.com",
+  "firstName": "Ashl",
+  "lastName": "Wear",
+  "email": "awear@test.com",
   "favoriteColor": "Brown",
   "birthday": "2000-06-19"
 }
 
 ### PUT contact
-PUT http://localhost:3000/contacts/6a0d38d50721e2569c1ceffc HTTP/1.1
+PUT http://localhost:3000/contacts/6a0e36f981be7652c234a765 HTTP/1.1
 content-type: application/json
 
 {
@@ -29,4 +29,4 @@ content-type: application/json
 }
 
 ### DELETE contact
-DELETE http://localhost:3000/contacts/69f98c01ef0f5a243d9926eb
+DELETE http://localhost:3000/contacts/6a0e36f981be7652c234a765
